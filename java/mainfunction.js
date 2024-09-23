@@ -19,3 +19,17 @@ function getTextFieldElementById(id){
     return newCurrent;
 
 };
+
+
+function getAllDonationHistoryById(id){
+
+    document.getElementById('all-donation-container').classList.add('hidden');
+
+    document.getElementById('history-content').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+
+    return;
+
+};
+

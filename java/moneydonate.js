@@ -17,6 +17,24 @@ document.getElementById('btn-first-money').addEventListener('click',function(){
 
     document.getElementById('new-balance').innerText = addMoney;
 
+    const div = document.createElement('div');
+    div.classList.add('border','p-5','rounded-xl')
+    div.innerHTML = `
+
+        <h1 class="font-bold">${addMoney} Taka is Donated for famine-2024 at noakhali, Bangladesh</h1>
+        <br>
+        <p class="text-gray-500">
+
+            const date = new Date()
+            console.log(date)
+
+        </p>
+
+    `
+    console.log(div)
+
+    document.getElementById('history-content').appendChild(div) 
+
 });
 
 
