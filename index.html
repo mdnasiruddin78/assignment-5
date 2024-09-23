@@ -21,7 +21,6 @@
               colors: {
                 arrow: 'rgb(180, 244, 97)',
                 money: 'rgba(17, 17, 17, 0.05)',
-                stecky: '#FBFBFB',
               }
             }
           }
@@ -34,27 +33,29 @@
       </style>
 </head>
 <body class="font-lexgend">
-        <nav class="lg:w-11/12 mx-auto space-x-3 bg-backdrop-blur p-5">
-          <div class="navbar">
-            <div class="navbar-start">
-              <a>
-                <button id="blog-file" class="btn bg-arrow text-xl lg:px-7"><a href="blog.html">Blog</a></button>
-              </a>
+        <div class="sticky z-50 top-0 backdrop-blur bg-white/10 p-6">
+          <nav class="lg:w-11/12 mx-auto space-x-3">
+            <div class="navbar">
+              <div class="navbar-start">
+                <a>
+                  <button id="blog-file" class="btn bg-arrow text-xl lg:px-7"><a href="blog.html">Blog</a></button>
+                </a>
+              </div>
+              <div class="navbar-center space-x-4">
+                <img class="hidden lg:flex" src="assets/logo.png" alt="">
+                <h1 class="font-bold lg:text-2xl">Donate Bangladesh</h1>
+              </div>
+              <div class="navbar-end lg:space-x-2">
+                <img class="hidden lg:flex" src="assets/coin.png" alt="">
+                <p class="font-bold lg:text-2xl"><span id="current-balance">2000</span> BDT</p>
+              </div>
             </div>
-            <div class="navbar-center space-x-4">
-              <img class="hidden lg:flex" src="assets/logo.png" alt="">
-              <h1 class="font-bold lg:text-2xl">Donate Bangladesh</h1>
-            </div>
-            <div class="navbar-end lg:space-x-2">
-              <img class="hidden lg:flex" src="assets/coin.png" alt="">
-              <p class="font-bold lg:text-2xl"><span id="current-balance">2000</span> BDT</p>
-            </div>
-          </div>
-          <div class="text-center space-x-2 lg:mt-20 mt-10">
+          </nav>
+          <div class="text-center space-x-2 mt-10">
             <button id="donation-part" class="btn bg-arrow font-bold px-6 border-1 border-gray-300">Donation</button>
             <button id="history-part" class="btn px-5 border-1 border-gray-300 font-bold">History</button>
           </div>
-        </nav>
+        </div>
     <main class="w-11/12 mx-auto mt-10">
         <div id="all-donation-container" class="space-y-5">
           <!-- nookhali-section-start -->
