@@ -16,24 +16,26 @@ document.getElementById('btn-first-money').addEventListener('click',function(){
 
     const newBalance = currentBalance - addMoney;
 
-    document.getElementById('current-balance').innerText = newBalance
+    document.getElementById('current-balance').innerText = newBalance.toFixed(2);
 
-    document.getElementById('new-balance').innerText = addMoney;
+    document.getElementById('new-balance').innerText = addMoney.toFixed(2);
 
     const div = document.createElement('div');
-    div.classList.add('border','p-5','rounded-xl')
+    div.classList.add('border','p-5','rounded-xl');
     div.innerHTML = `
 
         <div class="space-y-3">
-            <h1 class="font-bold">${addMoney} Taka is Donated for famine-2024 at noakhali, Bangladesh</h1>
+            <h1 class="font-bold">${addMoney.toFixed(2)} Taka is Donated for famine-2024 at noakhali, Bangladesh</h1>
         <p id="show-date-time" class="text-gray-500">
             Date: ${Date()}</p>
         </div>
 
     `
-    console.log(div)
+    console.log(div);
 
     document.getElementById('history-content').appendChild(div);
+
+    const showModal = showModal();
 
 });
 
@@ -52,22 +54,22 @@ document.getElementById('btn-second-money').addEventListener('click',function(){
 
     const newBalance = currentBalance - secondMoney;
 
-    document.getElementById('current-balance').innerText = newBalance;
+    document.getElementById('current-balance').innerText = newBalance.toFixed(2);
 
-    document.getElementById('second-balance').innerText = secondMoney;
+    document.getElementById('second-balance').innerText = secondMoney.toFixed(2);
 
     const div = document.createElement('div');
-    div.classList.add('border','p-5','rounded-xl')
+    div.classList.add('border','p-5','rounded-xl');
     div.innerHTML = `
 
         <div class="space-y-3">
-            <h1 class="font-bold">${secondMoney} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+            <h1 class="font-bold">${secondMoney.toFixed(2)} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
         <p id="show-date-time" class="text-gray-500">
             Date: ${Date()}</p>
         </div>
 
     `
-    console.log(div)
+    console.log(div);
 
     document.getElementById('history-content').appendChild(div);
 
@@ -88,22 +90,22 @@ document.getElementById('btn-third-money').addEventListener('click',function(){
 
     const newBalance = currentBalance - thirdMoney;
 
-    document.getElementById('current-balance').innerText = newBalance;
+    document.getElementById('current-balance').innerText = newBalance.toFixed(2);
 
-    document.getElementById('update-balance').innerText = thirdMoney;
+    document.getElementById('update-balance').innerText = thirdMoney.toFixed(2);
 
     const div = document.createElement('div');
-    div.classList.add('border','p-5','rounded-xl')
+    div.classList.add('border','p-5','rounded-xl');
     div.innerHTML = `
 
         <div class="space-y-3">
-            <h1 class="font-bold">${thirdMoney} Taka is Donated for famine-2024 at quota, Bangladesh</h1>
+            <h1 class="font-bold">${thirdMoney.toFixed(2)} Taka is Donated for famine-2024 at quota, Bangladesh</h1>
         <p id="show-date-time" class="text-gray-500">
             Date: ${Date()}</p>
         </div>
 
     `
-    console.log(div)
+    console.log(div);
 
     document.getElementById('history-content').appendChild(div);
 
