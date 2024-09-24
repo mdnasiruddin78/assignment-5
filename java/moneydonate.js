@@ -2,6 +2,7 @@
 // noakhali-section
 document.getElementById('btn-first-money').addEventListener('click',function(){
 
+
     const addMoney = getInputFieldElementById('add-money-number');
 
     if(isNaN(addMoney) || addMoney < 0){
@@ -9,9 +10,8 @@ document.getElementById('btn-first-money').addEventListener('click',function(){
         alert('invalid input number');
 
         return;
-
     }
-
+    
     const currentBalance = getTextFieldElementById('current-balance');
 
     const newBalance = currentBalance - addMoney;
@@ -31,22 +31,25 @@ document.getElementById('btn-first-money').addEventListener('click',function(){
         </div>
 
     `
-    console.log(div);
 
     document.getElementById('history-content').appendChild(div);
 
-    const showModal = showModal();
+    my_modal_2.showModal();
 
 });
 
 
 // feni-section
-document.getElementById('btn-second-money').addEventListener('click',function(){
+document.getElementById('btn-second-money').addEventListener('click',function(event){
+
+    event.preventDefault();
 
     const secondMoney = getInputFieldElementById('input-add-money');
 
     if(isNaN(secondMoney) || secondMoney < 0){
+
         alert('invalid input number');
+
         return;
     }
 
@@ -69,20 +72,25 @@ document.getElementById('btn-second-money').addEventListener('click',function(){
         </div>
 
     `
-    console.log(div);
 
     document.getElementById('history-content').appendChild(div);
+
+    my_modal_1.showModal();
 
 });
 
 
 // quota-section
-document.getElementById('btn-third-money').addEventListener('click',function(){
+document.getElementById('btn-third-money').addEventListener('click',function(event){
+
+    event.preventDefault();
 
     const thirdMoney = getInputFieldElementById('input-third-addmoney-number');
 
     if(isNaN(thirdMoney) || thirdMoney < 0){
+
         alert('invalid input number');
+
         return;
     }
 
@@ -105,8 +113,9 @@ document.getElementById('btn-third-money').addEventListener('click',function(){
         </div>
 
     `
-    console.log(div);
 
     document.getElementById('history-content').appendChild(div);
+
+    my_modal_4.showModal();
 
 });

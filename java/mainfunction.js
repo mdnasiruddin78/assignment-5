@@ -33,9 +33,3 @@ function getAllDonationHistoryById(id){
 
 };
 
-
-function showModal(){
-
-    document.getElementById('btn-first-money').classList.add('modal-show-click');
-
-};
