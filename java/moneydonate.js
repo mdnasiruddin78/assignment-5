@@ -5,7 +5,7 @@ document.getElementById('btn-first-money').addEventListener('click',function(){
 
     const addMoney = getInputFieldElementById('add-money-number');
 
-    if(isNaN(addMoney) || addMoney < 0){
+    if(isNaN(addMoney) || addMoney <= 0){
     
         alert('invalid input number');
 
@@ -46,7 +46,7 @@ document.getElementById('btn-second-money').addEventListener('click',function(ev
 
     const secondMoney = getInputFieldElementById('input-add-money');
 
-    if(isNaN(secondMoney) || secondMoney < 0){
+    if(isNaN(secondMoney) || secondMoney <= 0){
 
         alert('invalid input number');
 
@@ -87,7 +87,7 @@ document.getElementById('btn-third-money').addEventListener('click',function(eve
 
     const thirdMoney = getInputFieldElementById('input-third-addmoney-number');
 
-    if(isNaN(thirdMoney) || thirdMoney < 0){
+    if(isNaN(thirdMoney) || thirdMoney <= 0){
 
         alert('invalid input number');
 
